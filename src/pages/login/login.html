@@ -1,0 +1,80 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+    <div id="logo" padding text-center>
+        <img src="./assets/imgs/logo.png">
+      </div>
+
+  <aside padding>
+    <ion-segment [(ngModel)]="optionLogin" color="blue">
+      <ion-segment-button value="ingresar">
+        Ingresar
+      </ion-segment-button>
+      <ion-segment-button value="registro">
+        Registrarme
+      </ion-segment-button>
+    </ion-segment>
+  
+
+  <aside [ngSwitch]="optionLogin">
+
+  <form (submit)="doLogin()" *ngSwitchCase="'ingresar'">
+    <ion-input type="email"  name="email"></ion-input>
+    <ion-input type="password"  name="password"></ion-input>
+    <aside padding text-center>
+      <button ion-button round color="light" icon-right>
+        Ingresar<ion-icon name="log-in"></ion-icon>
+      </button>
+    </aside>
+  </form>
+
+  <form (submit)="doLogin()" *ngSwitchCase="'registro'">
+      <ion-label>Username</ion-label>
+          <ion-input type="text" name="username"></ion-input>
+
+
+      <ion-label float>Fullname</ion-label>
+          <ion-input type="text" name="fullname"></ion-input>
+
+          <ion-label float>Email</ion-label>
+          <ion-input type="email" name="email"></ion-input>
+
+
+          <ion-label float>Password</ion-label>
+          <ion-input type="password" name="password"></ion-input>
+
+
+
+          <ion-label float>Retry Password</ion-label>
+          <ion-input type="password" name="password"></ion-input>
+
+
+        <div padding text-center>
+          <button ion-button round color="light" icon-right>
+            Registrame <ion-icon name="person-add"></ion-icon>
+          </button>
+        </div>
+
+
+    </form>
+
+
+
+  </aside>
+
+</aside>
+
+</ion-content>
