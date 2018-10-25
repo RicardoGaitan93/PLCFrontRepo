@@ -11,13 +11,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule } from '@angular/common/http'
 import { UserServiceProvider } from '../providers/user-service/user-service';
 import { LoginPage } from '../pages/login/login';
+import { MainPage } from '../pages/main/main';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    LoginPage
+    LoginPage,
+    MainPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { LoginPage } from '../pages/login/login';
     MyApp,
     HomePage,
     ListPage,
-    LoginPage
+    LoginPage,
+    MainPage
   ],
   providers: [
     StatusBar,
