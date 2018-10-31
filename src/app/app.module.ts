@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { UserServiceProvider } from '../providers/user-service/user-service';
 import { LoginPage } from '../pages/login/login';
 import { MainPage } from '../pages/main/main';
+import { RequestPage } from '../pages/request/request';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MainPage } from '../pages/main/main';
     HomePage,
     ListPage,
     LoginPage,
-    MainPage
+    MainPage,
+    RequestPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { MainPage } from '../pages/main/main';
     HomePage,
     ListPage,
     LoginPage,
-    MainPage
+    MainPage,
+    RequestPage
   ],
   providers: [
     StatusBar,

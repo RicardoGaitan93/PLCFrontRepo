@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { RequestPage } from '../request/request';
 
 /**
  * Generated class for the LoginPage page.

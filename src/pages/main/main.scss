@@ -5,4 +5,9 @@ page-main {
       .item {
         background-color: color($colors, primary);
       }
+      .img {
+        width : "100";
+        height : "100";
+        margin-top: 20px;
+      }
 }

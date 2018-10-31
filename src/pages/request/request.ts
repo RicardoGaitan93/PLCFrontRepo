@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { RequestPage } from '../request/request';
 
 /**
- * Generated class for the MainPage page.
+ * Generated class for the RequestPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +10,18 @@ import { RequestPage } from '../request/request';
 
 @IonicPage()
 @Component({
-  selector: 'page-main',
-  templateUrl: 'main.html',
+  selector: 'page-request',
+  templateUrl: 'request.html',
 })
-export class MainPage {
+export class RequestPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MainPage');
+    console.log('ionViewDidLoad RequestPage');
   }
 
-  goRequestPage():void{
-    this.navCtrl.push(RequestPage);
-  }
+
 
 }
